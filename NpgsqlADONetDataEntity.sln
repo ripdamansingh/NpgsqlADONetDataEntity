@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NpgsqlADONetDataEntity", "NpgsqlADONet\NpgsqlADONetDataEntity.csproj", "{7DE1A6F8-CDFA-461C-93BA-1863CA53068B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCode", "SampleCode\SampleCode.csproj", "{85388D5C-158B-496C-A23B-C054B0358262}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7DE1A6F8-CDFA-461C-93BA-1863CA53068B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DE1A6F8-CDFA-461C-93BA-1863CA53068B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DE1A6F8-CDFA-461C-93BA-1863CA53068B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85388D5C-158B-496C-A23B-C054B0358262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85388D5C-158B-496C-A23B-C054B0358262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85388D5C-158B-496C-A23B-C054B0358262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85388D5C-158B-496C-A23B-C054B0358262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
