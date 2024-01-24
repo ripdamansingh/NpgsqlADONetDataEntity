@@ -6,29 +6,37 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Npgsql.ADO.Net.DataEntity</Title>
-    <Authors>$(AssemblyName)</Authors>
+    <Authors>Ripdaman Singh</Authors>
     <PackAsTool>False</PackAsTool>
     <Company>Bro2Tech</Company>
     <PackageTags>npgsql data entity, Npgsql.ADO.Net.DataEntity, npgsql, postgresql, postgres, ado, ado.net, database, sql</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageId>Npgsql.ADO.Net.DataEntity</PackageId>
+    <PackageId>ADO.Net.Npgsql.DataEntity</PackageId>
     <Description>Npgsql.ADO.Net.DataEntity is the common library to do the CRUD operations, by using the library you can perform the INSERT, UPDATE, DELETE, SELECT, etc.
 
 You can get the data tables from just a 1 line code.</Description>
     <PackageReleaseNotes>Npgsql.ADO.Net.DataEntity is the common library to do the CRUD operations, by using the library you can perform the INSERT, UPDATE, DELETE, SELECT, etc.
 
 You can get the data tables from just a 1 line code.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/ripdamansingh/NpgsqlADONetDataEntity</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ripdamansingh/NpgsqlADONetDataEntity</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="C:\Users\ripda\Desktop\icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <PackageReference Include="Npgsql" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql" Version="8.0.1" />
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
