@@ -6,6 +6,7 @@ namespace Npgsql.ADO.Net.DataEntity
     public class DataEntity : Common
     {
         public string pgConnection { get; set; }
+        
         public DataTable ExecuteDataTableFN(string fn_Name, params object[] ParaArray)
         {
             DataTable dt = new DataTable();
