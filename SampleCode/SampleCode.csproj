@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ADO.Net.Npgsql.DataEntity" Version="1.0.1" />
+    <PackageReference Include="Npgsql" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NpgsqlADONetDataEntity">
+      <HintPath>..\NpgsqlADONet\bin\Debug\net6.0\NpgsqlADONetDataEntity.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

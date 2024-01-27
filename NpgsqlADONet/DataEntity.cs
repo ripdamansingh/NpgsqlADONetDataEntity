@@ -5,7 +5,8 @@ namespace Npgsql.ADO.Net.DataEntity
 {
     public class DataEntity : Common
     {
-        public DataTable ExecuteDataTableFN(string pgConnection, string fn_Name, params object[] ParaArray)
+        public string pgConnection { get; set; }
+        public DataTable ExecuteDataTableFN(string fn_Name, params object[] ParaArray)
         {
             DataTable dt = new DataTable();
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -23,7 +24,7 @@ namespace Npgsql.ADO.Net.DataEntity
             return dt;
         }
 
-        public DataTable ExecuteDataTableFN(string pgConnection, string fn_Name)
+        public DataTable ExecuteDataTableFN(string fn_Name)
         {
             DataTable dt = new DataTable();
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -40,7 +41,7 @@ namespace Npgsql.ADO.Net.DataEntity
             return dt;
         }
 
-        public async Task<DataTable> ExecuteDataTableFNAsync(string pgConnection, string fn_Name, params object[] ParaArray)
+        public async Task<DataTable> ExecuteDataTableFNAsync(string fn_Name, params object[] ParaArray)
         {
             DataTable dt = new DataTable();
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -58,7 +59,7 @@ namespace Npgsql.ADO.Net.DataEntity
             return dt;
         }
 
-        public DataTable ExecuteDataTableSP(string pgConnection, string sp_Name, params object[] ParaArray)
+        public DataTable ExecuteDataTableSP(string sp_Name, params object[] ParaArray)
         {
             DataTable dt = new DataTable();
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -76,7 +77,7 @@ namespace Npgsql.ADO.Net.DataEntity
             return dt;
         }
 
-        public async Task<DataTable> ExecuteDataTableSPAsync(string pgConnection, string sp_Name, params object[] ParaArray)
+        public async Task<DataTable> ExecuteDataTableSPAsync(string sp_Name, params object[] ParaArray)
         {
             DataTable dt = new DataTable();
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -94,7 +95,7 @@ namespace Npgsql.ADO.Net.DataEntity
             return dt;
         }
 
-        public DataSet ExecuteDataSetFN(string pgConnection, string fn_Name)
+        public DataSet ExecuteDataSetFN(string fn_Name)
         {
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
@@ -131,7 +132,7 @@ namespace Npgsql.ADO.Net.DataEntity
             return ds;
         }
 
-        public DataSet ExecuteDataSetFN(string pgConnection, string fn_Name, params object[] ParaArray)
+        public DataSet ExecuteDataSetFN(string fn_Name, params object[] ParaArray)
         {
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
