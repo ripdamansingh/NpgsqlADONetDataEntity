@@ -58,7 +58,7 @@ namespace SampleCode
             dataEntity.pgConnection = "Server=pg_server_IP;User Id=pg_user_iid;Pwd=pg_passwrd;Database=pg_password";
             //Database connection string declared in YourMainClass globally.___END
 
-            var data = dataEntity.ExecuteDataSetFN("fn_api_select_MasterDivision", "hjkj", "hgjkh");
+            var data = dataEntity.ExecuteDataSetFN("fn_api_select_YourPostgreSQl_Database_function", "pram1", "pram2");
 
         }
     }
